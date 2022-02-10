@@ -73,6 +73,17 @@ export const onRenderBody = ({
       key="meta-pixel-pixel"
       dangerouslySetInnerHTML={{ __html: metaPixelPixelSnippet }}
     />,
+    <script
+      type={usePartytown ? "text/partytown" : "text/javascript"}
+      key="wistia"
+      src="https://fast.wistia.com/assets/external/E-v1.js"
+      async
+    />,
+    <script
+      async
+      type={usePartytown ? "text/partytown" : "text/javascript"}
+      src={`https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=${process.env.KLAVIYO_COMPANY_ID}`}
+    />,
   ]
 
   const postBodyComponents = [
@@ -96,6 +107,8 @@ export const onRenderBody = ({
             "static-tracking.klaviyo.com",
             "js.intercomcdn.com",
             "www.googletagmanager.com",
+            "fast.wistia.net",
+            "embedwistia-a.akamaihd.net",
           ]
           if (proxyDomains.includes(url.hostname)) {
             const proxyUrl = new URL("https://cdn.builder.io/api/v1/proxy-api")
