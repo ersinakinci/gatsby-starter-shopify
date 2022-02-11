@@ -100,11 +100,7 @@ export const onRenderBody = ({
         resolveUrl={(url) => {
           // https://partytown.builder.io/proxying-requests
           const proxyDomains = [
-            "www.google-analytics.com",
-            "d1c1ml2vg3em4w.cloudfront.net",
             "connect.facebook.net",
-            "static.klaviyo.com",
-            "static-tracking.klaviyo.com",
             "js.intercomcdn.com",
             "www.googletagmanager.com",
             "fast.wistia.net",
