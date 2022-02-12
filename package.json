@@ -13,12 +13,11 @@
     "e-commerce"
   ],
   "scripts": {
-    "develop": "npm run partytown && gatsby develop",
+    "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "npm run partytown && gatsby build",
+    "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "partytown": "partytown copylib public/~partytown",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
