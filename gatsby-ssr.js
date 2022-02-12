@@ -103,6 +103,8 @@ export const onRenderBody = ({
             "connect.facebook.net",
             "js.intercomcdn.com",
             "www.googletagmanager.com",
+            "static.klaviyo.com",
+            "static-tracking.klaviyo.com",
             "fast.wistia.net",
             "embedwistia-a.akamaihd.net",
           ]
